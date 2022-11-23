@@ -32,15 +32,15 @@ class ViewController: UIViewController {
         
         let diceArray = [UIImage(imageLiteralResourceName: "DiceOne"), UIImage(imageLiteralResourceName: "DiceTwo"), UIImage(imageLiteralResourceName: "DiceThree"), UIImage(imageLiteralResourceName: "DiceFour"), UIImage(imageLiteralResourceName: "DiceFive"), UIImage(imageLiteralResourceName: "DiceSix")]
         
+        diceImageView1.image = diceArray.randomElement()
+        diceImageView2.image = diceArray.randomElement()
+        
 //        let diceArray = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")]
         
 //        print("Button got tapped.")
 //        diceImageView1.image = #imageLiteral(resourceName: "DiceFour")
 //        diceImageView2.image = #imageLiteral(resourceName: "DiceFour")
-        
-        diceImageView1.image = diceArray.randomElement()
-        diceImageView2.image = diceArray.randomElement()
-        
+                
 //        diceImageView2.image = diceArray[Int.random(in: 0 ..< diceArray.count)]
 //        diceImageView2.image = diceArray[Int.random(in: 0 ... 5)]
 
